@@ -1,50 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en-us">
 
-<html>
+<!-- This is contact.html which displays a contact form for user.
+    This page primarily uses HTML, CSS & bootstrap. -->
 
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="assets\css\reset.css">
-    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+  <!-- adding style sheets and bootstrap css -->
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-              
-    <!-- this is header  -->
-<header>
-    <div class="NameBox"><br>&nbsp;&nbsp;Gouri Tamhankar&nbsp; &nbsp;     </div>
-    <div class="headerlink">
-    <a href="index.html">About   |</a>
-    <a href="Portfolio.html">Portfolio   |</a>
-    <a href="Contact.html">Contact</a>
-    </div>    
-</header>
 
-
-<!-- this is body  -->
 <body>
-    <div>
-        <br>        
-        <div class="ContactBodyContainer">
-            <div class="bodyTitle"><br>Contact<hr></div>                    
-            <div class="BodyText"> 
-                <form action="#">
-                    Name: <input type="text" name="txtName"><br>
-                    Email: <input type="text" name="txtEmail"><br>
-                    Message: <textarea id="subject" name="subject" style="height:100px"></textarea>
-                    <br>                         
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            </div>      
-    </div>
-</body>
 
-<!-- this is footer  -->
-<div class="clearfix">
-<footer>
-   <br> Copyright@
-</footer>
+  <!-- adding navbar components to create header and navigation menu/display -->
+  <header id="headerNavigation">
+      <div id="nav">
+        <a href="index.html" id="logo">&nbsp;&nbsp;Gouri Tamhankar&nbsp; &nbsp; </a>     
+        <nav class="navbar headerlink">                                 
+          <div class="nav justify-content-center">
+            <span class="nav-item "><a class="nav-link active" href="index.html">About   </a></span>
+            <span class="nav-item "><a class="nav-link" href="portfolio.html">Portfolio   </a></span>
+            <span class="nav-item "><a class="nav-link" href="Contact.html">Contact</a></span>
+          </div>
+        </nav>
+      </div>
+  </header> 
+
+  <!-- <div id="mainBody" class="jumbotron"> could have used this boostrap component as well -->
+  <div id="mainBody" > 
+    <section class="mainSection">
+    <h1 class="bodyTitle">Contact</h1>                
+    <div class="row" id="BodyText"> 
+    <form action="#">
+        Name: <input type="text" name="txtName" placeholder="John Smith"><br>
+        Email: <input type="text" name="txtEmail" placeholder="example@gmail.com" ><br>
+        Message: <textarea id="subject" name="subject" style="height:80px"></textarea>
+        <br>                         
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    </section>      
+  </div>
+
+  <!-- using grid concept row layout component for footer -->
+<div class="row"> 
+  <div class="col-md-12" id="footer">Copyright@</div>
 </div>
 
-<!-- this is end  -->
+</body>
+
 </html>
